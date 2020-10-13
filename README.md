@@ -3,6 +3,8 @@
 
 # some git tips(for Hacktoberfest2020):
 
+## part1
+
 - basically you have to fork the repo from say MyOrganization to your personal github
 - then clone the repo into local machine to work locally
 - after development-work is done in my locally cloned repo from the root of the project run following command
@@ -17,14 +19,26 @@ $ git fetch upstream
 
 After fetching from the remote branch, you would still have to merge the commits. So you can actually replace above with:
 
-$ git pull upstream master
+  $ git pull upstream master
 
-- git pull is essentially git fetch + git merge.
+  - git pull is essentially git fetch + git merge.
 
-And now, Merge the changes from upstream/master into your local master branch. This brings your fork’s master branch into sync with the upstream repository, without losing your local changes.
+  And now, Merge the changes from upstream/master into your local master branch. This brings your fork’s master branch into sync with the upstream repository, without losing your local changes.
 
 $ git checkout master
 $ git merge upstream/master
+
+- git add -A
+- git commit -m “adding storybook, a development environment for UI components”
+- git push origin feature-branch-name
+
+## part2
+
+Then in the browser navigate to the original URL of the Original repo.
+Click on “Create Pull Request”.
+
+
+https://medium.com/@paulrohan/workflow-of-pull-request-or-merge-request-to-github-bitbucket-gitlab-b0942ec5d56e
 
 https://stackoverflow.com/questions/37741924/git-remote-v-shows-fetch-and-push-twice-once-for-github-and-once-for
 
@@ -62,8 +76,16 @@ You may also want to rebase rather than merging. This is, if anything, more comp
 (In short, don't use git pull until you are very familiar with fetching, merging, and rebasing, and are ready to allow Git to try to do them all at once.)
 
 # example:
-git clone https://github.com/LijaAlex12/Algorithms.git
-git add README.md
-git branch -M main
-git remote add origin https://github.com/LijaAlex12/Algorithms.git
-git push -u origin main
+- $ git clone https://github.com/LijaAlex12/Algorithms.git
+- $ git add README.md
+- $ git branch -M main
+- $ git remote add origin https://github.com/LijaAlex12/Algorithms.git
+- $ git push -u origin main
+
+## general priciples:
+
+- $ git pull upstream master
+- $ git add -A
+- $ git commit -m “adding storybook, a development environment for UI components”
+- $ git push origin feature-branch-name
+- $

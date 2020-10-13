@@ -3,6 +3,29 @@
 
 # some git tips(for Hacktoberfest2020):
 
+- basically you have to fork the repo from say MyOrganization to your personal github
+- then clone the repo into local machine to work locally
+- after development-work is done in my locally cloned repo from the root of the project run following command
+
+The above step configures a git remote for a fork. This step is ONLY required ONCE per repository, which is Add a new remote upstream repository to sync with the fork.
+
+$ git remote add upstream git@github.com:MyOrganization/institutions-web.git
+
+- Now, I actually have to sync my local forked Repo with the remote Repo, before raising a new PR, this is VERY IMPORTANT as it will avoid all merge-conflict later on. So run below command to fetch project branches from the upstream repository to get all the commits
+
+$ git fetch upstream
+
+After fetching from the remote branch, you would still have to merge the commits. So you can actually replace above with:
+
+$ git pull upstream master
+
+- git pull is essentially git fetch + git merge.
+
+And now, Merge the changes from upstream/master into your local master branch. This brings your fork’s master branch into sync with the upstream repository, without losing your local changes.
+
+$ git checkout master
+$ git merge upstream/master
+
 https://stackoverflow.com/questions/37741924/git-remote-v-shows-fetch-and-push-twice-once-for-github-and-once-for
 
 # What is a remote?

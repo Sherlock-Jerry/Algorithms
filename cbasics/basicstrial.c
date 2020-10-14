@@ -2,22 +2,34 @@
 #include<stdlib.h>
 int main(){
 
-// getchar(),putchar(),gets(),puts()
+// ASCII value of a character:
+
 char a;
-char s[50];
-// a=getchar();
-// printf("%c",a);/*=>character as output*/
-
-// a=getchar();
-// putchar(a);
-
-// printf("\n");
-// printf("%c",a);
-
-gets(s);
-puts(s);
+a=getchar();
+printf("asccii %d",a);
 
 }
+
+
+
+
+
+// getchar(),putchar(),gets(),puts()
+// char a;
+// char s[50];
+// // a=getchar();
+// // printf("%c",a);/*=>character as output*/
+//
+// // a=getchar();
+// // putchar(a);
+//
+// // printf("\n");
+// // printf("%c",a);
+//
+// gets(s);
+// puts(s);
+//
+// }
 
 
 

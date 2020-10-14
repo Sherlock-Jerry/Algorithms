@@ -3,7 +3,14 @@ void main(){
   int a,b,sum,i,p,j;
   printf("enter 2 nums:");
   scanf("%d%d",&a,&b);
-  (a>b)?printf("%d is greater",a):printf("%d is greater",b);
+
+  // swap without 3rd variable
+a=a+b;
+b=a-b;
+a=a-b;
+printf("%d%d",a,b);
+
+  // (a>b)?printf("%d is greater",a):printf("%d is greater",b);
 
   // printf("%d\n",a+b);
 

@@ -2,14 +2,66 @@
 #include<stdlib.h>
 int main(){
 
-// ASCII value of a character:
+int i,j,n;
 
-char a;
-a=getchar();
-printf("asccii %d",a);
-
+// print abc pattern
+printf("enter no");
+scanf("%d",&n);
+// printf("%c\n", n);
+for(i=65;i<=65+n-1;i++){
+  for(j=65;j<=i;j++){
+    printf("%c",j);
+  }
+  printf("\n" );
 }
+}
+// for(i=65;i<=n;i++){
+//   for(j=)
+// }
+// print no pattern reverse
+// printf("enter no");
+// scanf("%d",&n);
+// for(i=n;i>=1;i--)
+// {
+//   for(j=1;j<=i;j++){
+//     printf("%d",j);
+//   }
+//   printf("\n");
+// }
+//
 
+// }
+// print no pattern
+// for(i=1;i<=n;i++){
+//   for(j=1;j<=i;j++){
+//     printf("%d",j);
+//   }
+//   printf("\n");
+// }
+
+
+// print * pattern
+
+// printf("enter no");
+// scanf("%d",&n);
+// for(i=1;i<=n;i++){
+//   for(j=1;j<=i;j++){
+//     printf("*");
+//   }
+//   printf("\n" );
+// }
+
+// }
+
+
+
+
+// char a;
+// a=getchar();
+// printf("asccii %d",a);
+//
+// }
+//
 
 
 

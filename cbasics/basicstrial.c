@@ -6,32 +6,44 @@ int main(){
 int a,x;
 
 x=1;
-while(x==1){
-  printf("enter case no");
-  scanf("%d",&a );
 
-  switch (a) {
-    case 1:
-      printf("csa");
-      break;
-    case 2:
-      printf("pp" );
-      break;
-    case 3:
-      printf("cans\n");
-      break;
-    case 4:
-      x=0;
-      // exit;
-      break;
-    default:
-      printf("hello diff choice\n" );
-      break;
-
+// Loop concepts:
+a=10;
+while(a<20){
+  a++;
+  printf("hi");
+  if(a>15){
+    break;/*exit out of the while loop*/
   }
 }
 
 }
+// while(x==1){
+//   printf("enter case no");
+//   scanf("%d",&a );
+//
+//   switch (a) {
+//     case 1:
+//       printf("csa");
+//       break;
+//     case 2:
+//       printf("pp" );
+//       break;
+//     case 3:
+//       printf("cans\n");
+//       break;
+//     case 4:
+//       x=0;
+//       // exit;
+//       break;
+//     default:
+//       printf("hello diff choice\n" );
+//       break;
+//
+//   }
+// }
+//
+// }
 
 
 

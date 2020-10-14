@@ -2,22 +2,51 @@
 #include<stdlib.h>
 int main(){
 
+// getchar(),putchar(),gets(),puts()
+char a;
+char s[50];
+// a=getchar();
+// printf("%c",a);/*=>character as output*/
+
+// a=getchar();
+// putchar(a);
+
+// printf("\n");
+// printf("%c",a);
+
+gets(s);
+puts(s);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // switch case example;
-int a,x;
-
-x=1;
-
-// Loop concepts:
-a=10;
-while(a<20){
-  a++;
-  printf("hi");
-  if(a>15){
-    break;/*exit out of the while loop*/
-  }
-}
-
-}
+// int a,x;
+//
+// x=1;
+//
+// // Loop concepts:
+// a=10;
+// while(a<20){
+//   a++;
+//   printf("hi");
+//   if(a>15){
+//     break;/*exit out of the while loop*/
+//   }
+// }
+//
+// }
 // while(x==1){
 //   printf("enter case no");
 //   scanf("%d",&a );

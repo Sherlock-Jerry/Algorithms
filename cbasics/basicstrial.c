@@ -1,12 +1,62 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
+
+// switch case example;
+int a,x;
+
+x=1;
+while(x==1){
+  printf("enter case no");
+  scanf("%d",&a );
+
+  switch (a) {
+    case 1:
+      printf("csa");
+      break;
+    case 2:
+      printf("pp" );
+      break;
+    case 3:
+      printf("cans\n");
+      break;
+    case 4:
+      x=0;
+      // exit;
+      break;
+    default:
+      printf("hello diff choice\n" );
+      break;
+
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 // greatest of 3
-  int a,b,c,sum,i,p,j;
-  printf("enter 3 nums:");
-  scanf("%d%d%d",&a,&b,&c);
+  // int a,b,c,sum,i,p,j;
+  // printf("enter 3 nums:");
+  // scanf("%d%d%d",&a,&b,&c);
   // if(a>b){
   //   if(a>c){
   //     printf("a gt");
@@ -35,16 +85,16 @@ int main(){
 // }
 
 
-if(a>=b && a>=c){
-  printf("a gt\n");
-}
-else if(b>=a && b>=c){
-  printf("b gt\n");
-}
-else{
-  printf("c gt\n" );
-}
-
+// if(a>=b && a>=c){
+//   printf("a gt\n");
+// }
+// else if(b>=a && b>=c){
+//   printf("b gt\n");
+// }
+// else{
+//   printf("c gt\n" );
+// }
+//
 
   // swap without 3rd variable
 // a=a+b;
@@ -69,4 +119,4 @@ else{
 // printf("%d\n",p );
 
 
-}
+// }
